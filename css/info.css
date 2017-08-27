@@ -97,6 +97,9 @@ header {
   padding: 80px 0;
   background-image: url("../images/news/sub_cover.jpg");
   background-size: cover; }
+  @media (max-width: 550px) {
+    #cover_area {
+      padding: 40px 0; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #cover_area {
       background-image: url("../images/news/sub_cover@2x.jpg"); } }
@@ -139,6 +142,9 @@ header {
       font-size: 1.4rem;
       display: table-cell;
       vertical-align: inherit; }
+  @media (max-width: 550px) {
+    #contets #sidebar {
+      display: none; } }
   @media (max-width: 550px) {
     #contets h2 {
       padding-bottom: 20px;

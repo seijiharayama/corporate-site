@@ -110,7 +110,7 @@ header {
         (min-resolution: 2dppx) {
 
           background-image: url("../images/top/navi_top@2x.png");
-
+          
         }
 
       } // .li.navi_toppage a
@@ -168,11 +168,15 @@ header {
   padding: 80px 0; //retina_bg
   background-image: url("../images/news/sub_cover.jpg");
   background-size: cover;
+    @media (max-width: 550px) {
+  padding: 40px 0;
+  }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx) {
 
     background-image: url("../images/news/sub_cover@2x.jpg");
+
 
   }
 
@@ -187,7 +191,10 @@ header {
       margin: 0;
       letter-spacing: 0.2rem;
       padding-bottom: 20px;
+      
     }
+
+
   }
   @media (min-width: 551px) {
     h2 {
@@ -198,8 +205,8 @@ header {
       font-weight: bold;
       margin: 0;
       letter-spacing: 0.2rem;
-
     }
+
   }
 
 }
@@ -232,6 +239,12 @@ header {
            vertical-align: inherit;
            }
        }
+  }
+  
+    #sidebar{
+      @media (max-width: 550px) {
+    display: none;
+      }
   }
 
   @media (max-width: 550px) {
